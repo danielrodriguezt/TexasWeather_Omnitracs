@@ -67,7 +67,7 @@ namespace Texas_Weather_DRT_Omnitracs
             string delimiter = ", ";
             if (!File.Exists(path))
             {
-                string createText = "Clima en el estado de Texas" + delimiter + "Unidad" + delimiter + "Precipitacion" + delimiter + Environment.NewLine;
+                string createText = "Texas Weather" + delimiter + "Units" + delimiter + "Precipitation" + delimiter + Environment.NewLine;
                 File.WriteAllText(path, createText);
             }
 
