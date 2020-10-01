@@ -67,7 +67,7 @@ namespace Texas_Weather_DRT_Omnitracs
             string delimiter = ", ";
             if (!File.Exists(path))
             {
-                string createText = "Clima en el estado de Texas" + delimiter + "unidad" + delimiter + "Precipitacion" + delimiter + Environment.NewLine;
+                string createText = "Clima en el estado de Texas" + delimiter + "Unidad" + delimiter + "Precipitacion" + delimiter + Environment.NewLine;
                 File.WriteAllText(path, createText);
             }
 
@@ -91,7 +91,7 @@ namespace Texas_Weather_DRT_Omnitracs
             else { Precipitacion= false;}
             
 
-            Console.WriteLine(temptest + delimiter + tempUnitest + delimiter + Precipitacion.ToString() + delimiter+ "Linea numero:" + invokeCount.ToString());
+            Console.WriteLine(temptest + delimiter + tempUnitest + delimiter + Precipitacion.ToString() + delimiter+ "Line number:" + invokeCount.ToString());
 
             string appendText = temptest + delimiter + tempUnitest + delimiter + Precipitacion.ToString() + delimiter + Environment.NewLine;
             File.AppendAllText(path, appendText);
