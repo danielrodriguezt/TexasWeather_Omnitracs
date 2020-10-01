@@ -1,7 +1,7 @@
 # TexasWeather_Omnitracs
-Ejercicio para Omnitracs
-El ejercicio lee cada 5 minutos el clima de Texas
-API utilizada Clima Cell (con la restriccion de no mas de 100 request por dia, una vez sobrepasado ese numero se envia error y se tendra que esperar 24 para tener 100 request disponibles)
-Es necesario instalar los paquetes de RestSharp v106.11.7 (Install-Package RestSharp -Version 106.6.10)
+Exercise for Omnitracs
+This program reads Texas weather every 5 minutes
+The API used for this purpose was Clima Cell (with the restriction of 100 request per day, so once you achieve this number you need wait 24 hours in oder the company give you another 100 reuquest)
+Is necessary to install RestSharp package v106.11.7 (Install-Package RestSharp -Version 106.6.10)
 NewtonSoft.Json v12.0.3
-Contiene un contador para solo ejecutarse un MAXIMO DE 10 OCASIONES para evitar consumir el total de los request por dia de Clima Cell
+Due the restriction of 100 request per day I included a counter with only 10 repetitions per execution in order do not waste the 100 reuqest in only one run
